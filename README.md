@@ -5,11 +5,11 @@ I've put measureless time and meticulous thought into making this the best marke
 
 This README will hopefully clarify everything you need to know in order to make full use of all that AutoEconomy has to offer.
 Of course, if you need any direct support, always feel free to contact me at any of the following locations:
-> The official support server: https://discord.gg/TBQ3q3m *
-> MC-Market: http://www.mc-market.org/members/194/
-> Spigot: https://www.spigotmc.org/members/justisr.5901/
-> Discord: justis#0194
-> Email: justis.root@gmail.com
+> The official support server: https://discord.gg/TBQ3q3m *  
+MC-Market: http://www.mc-market.org/members/194/  
+Spigot: https://www.spigotmc.org/members/justisr.5901/  
+Discord: justis#0194  
+Email: justis.root@gmail.com
 
 I'll do my best to resolve any questions you might have, thoroughly and promptly.
 

@@ -1,0 +1,82 @@
+####################
+# - Auto Economy - # Shop
+#################### 
+# - by Justis 
+# This file serves to construct the default GUI that appears when a player uses the /shop command.
+# As well as to define global shop settings.
+#
+# To create a new shop, simply create a new file in the shops folder, "<shop_name>.hmff" ensure you use the hmff extension.
+# To access your shop, use the command /shop <shop_name>
+# If the shops folder is missing, AutoEconomy will generate default shops for all known attainable your server version, but feel free to customize.
+# To re-generate the default shops, simply delete the shops folder.
+
+# The inventory title of the default shop GUI.
+# Any shop configuration missing the InventoryTitle field and value will use the filename as the shop's name.
+InventoryTitle: &9Shop
+
+# These default settings will apply to all custom shop configurations, unless new default settings are added to those individual files.
+DefaultSettings: AIR
+  Amount: 1
+  Name:  
+  Lore: 
+  LeftClick: 
+  RightClick: {leftclick}
+  MiddleClick: {leftclick}
+  ShiftLeftClick: {leftclick}
+  ShiftRightClick: {leftclick}
+
+# Slot types defined in this main shop.hmff file will be usable within all of the custom shop files.
+# Use the -preload:{slot} flag when using the /shop command, in order to drastically speed up the opening of the player's shop.
+SlotTypes:
+  BORDER: GRAY_STAINED_GLASS_PANE
+    Name: &0`
+  OPEN_SHOP: CHEST
+    Name: &9Shop
+    Lore: &7Left click to open the shop
+    LeftClick: p/shop {name} -preload:{slot}
+  ITEM:
+    Name: &9{item} &7| &a{buyprice}
+    Lore: &aLeft click to purchase 1\n&aShift left click to purchase a stack\n&cMiddle click for custom amount\n&bRight click to add 1 to cart\n&bShift right click to add a stack to cart
+    LeftClick: p/buy {item} 1 -confirm
+    RightClick: p/cart add {item} 1
+    MiddleClick: p/order {item}
+    ShiftLeftClick: p/buy {item} 1 -stack -confirm
+    ShiftRightClick: p/cart add {item} 1 -stack
+  VIEW_CART: WATER_BUCKET
+    Name: &aView Cart
+    Lore: &9View the items in your cart
+    LeftClick: p/cart
+  BACK: BARRIER
+    Name: &cBack
+    Lore: &9Back to main shop
+    LeftClick: p/shop -preload:{slot}
+
+BORDER: 0 1 2 3 4 5 6 7 8 9 17 18 26 27 35 36 44 45 46 47 48 50 51 52 53
+VIEW_CART: 49
+OPEN_SHOP:
+  13: PUMPKIN_PIE
+    Name: &9Food
+  20: LILY_PAD
+    Name: &9Plants
+  21: BOW
+    Name: &9Armory
+  22: DIAMOND
+    Name: &9Resources
+  23: STONE_PICKAXE
+    Name: &9Tools
+  24: ROTTEN_FLESH
+    Name: &9Drops
+  28: GRASS
+    Name: &9Natural_Blocks
+  29: STONE_BRICK_STAIRS
+    Name: &9Housing
+  30: BOOKSHELF
+    Name: &9Decorations
+  31: CHEST
+    Name: &9Functional
+  32: REDSTONE_LAMP
+    Name: &9Redstoneable
+  33: ORANGE_STAINED_GLASS
+    Name: &9Glass_and_Dye
+  34: WHITE_WOOL
+    Name: &9Wool

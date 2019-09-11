@@ -1,0 +1,74 @@
+####################
+# - Auto Economy - # Order GUI
+####################
+# - by Justis
+# This file serves as a configuration specifically to the order GUI that players will see when performing the /order <item> command
+
+# This GUI configuration offers the following placeholders:
+# {value} - Will be replaced with the total value of the item order.
+# {amount} - Will be replaced with the amount of the item being ordered.
+# {ordering} - Will be replaced with the AE name of the item being ordered. Unique to this placeholder is the ability to use it in place of specifying an item.
+
+# The inventory title of the cart GUI.
+InventoryTitle: &9Order &8{amount} &9{ordering} &7| &2{value}
+
+# This title will be used when {value} is greater than $0.00
+InventoryTitleWithValue: &9Order &8{amount} &9{ordering} &7| &2{value}
+
+DefaultSettings: GRAY_STAINED_GLASS_PANE
+  Amount: 1
+  Name:  
+  Lore: 
+  LeftClick: 
+  RightClick: {leftclick}
+  MiddleClick: {leftclick}
+  ShiftLeftClick: {leftclick}
+  ShiftRightClick: {leftclick}
+
+SlotTypes:
+  ADD_REMOVE: LIME_STAINED_GLASS_PANE
+    Name: &9Add or remove {size}
+    Lore: &aLeft click to add {size} to the order\n&cMiddle click to set order amount to {size}\n&bRight click to remove {size} from order\n&bShift right click to remove all from order
+    LeftClick: p/order {ordering} {amount}+{size}
+    MiddleClick: p/order {ordering} {size}
+    RightClick: p/order {ordering} {amount}-{size}
+  ITEM: {ordering}
+    Name: &9{ordering} &7| &a{value}
+    Lore: &aLeft click to purchase {amount} {ordering} for {value}\n&bRight click to add {amount} {ordering} to cart
+    LeftClick: p/buy {ordering} {amount} -confirm
+    MiddleClick: p/buy {ordering} {amount}
+    RightClick: p/cart add {ordering} {amount}
+    ShiftRightClick: {rightclick}
+  BORDER: LIGHT_GRAY_STAINED_GLASS_PANE
+    Name: &0`
+  CART: WATER_BUCKET
+    Name: &aView Cart
+    Lore: &9View the items in your cart
+    LeftClick: p/cart
+  BACK: BARRIER
+    Name: &eBack
+    Lore: &7Return to the shop
+    LeftClick: p/shop -preload:{slot}
+  RESET: LAVA_BUCKET
+    Name: &cReset Order
+    Lore: &7Reset the order amount
+    LeftClick: p/order {ordering}
+
+ITEM: 13
+ADD_REMOVE: 19
+	20:
+		Amount: 2
+	21:
+		Amount: 4
+	22:
+		Amount: 8
+	23:
+		Amount: 16
+	24:
+		Amount: 32
+	25:
+		Amount: 64
+BORDER: 36 38 39 41 42 44
+CART: 43
+BACK: 40
+RESET: 37

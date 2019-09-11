@@ -1,0 +1,39 @@
+#################### 
+# - Auto Economy - # Market Settings 
+#################### 
+# - by Justis 
+#
+# This file serves to define your settings for this particular market.
+# These settings will be copied over to any private or group market, and can be overwritten individually if desired. 
+
+# Buy Rate - 
+# The buy price for each item is equal to the sell price * the BuyRate. 
+# The larger the gap, the greater room for players to provide their own outside economic competition. 
+# Individual buy rates are configurable in the price files they are located in, for items you wish to intentionally make unbalanced (common/rare).
+# - 1 to disable buying.
+BuyRate: 2.0
+
+# Enabled Damaged Items - 
+# Setting this to true will allow players to sell their damaged tools, armor, and other equipment. 
+# The price they sell it for will be reduced to the % of whatever durability is left on that item.
+# Setting this to false will disable the selling of damaged equipment all together.
+# Note that this also applies to the buying of damaged items, if you have an addon or future version that provides players that option.
+EnableDamaged: true 
+
+# Money Reserves -
+# When AutoEconomy calculates the total money supply, currency in circulation will be considered an absence from the reserves until empty.
+# Recommended uses include simulating a larger player economy than the playerbase which is present in the market, such as during testing periods,
+# for private/group markets which shouldn't treat the player's balances as the entire money supply, or when a server first opens and the supply
+# is expected to change very rapidly and you'd like to ensure prices don't drop severely under the assumption that whatever money is in circulation
+# is all the money that exists within the market.
+# If money in circulation exceeds what was is reserved, then this will have no influence on the economy whatsoever.
+Reserves: 20000
+
+# Target Velocity -
+# https://en.wikipedia.org/wiki/Velocity_of_money
+# AutoEconomy's money supply measure is an M1 representation plus whatever's left of the reserves after negating what's in circulation.
+# Keep in mind, AE cannot account for the liquidity of assets held by all the plugins you may have installed, so there is a margin for error.
+# Since this is a videogame, and selling items comes as fast as you can mine them, I'd recommend targetting a velocity that is slightly
+# higher than what you would expect of an M1 measure in real life, to match pace. If you do have plugins with liquid assets, you may also
+# consider somewhat increasing the target velocity as a means of compensating for the assets influencing money supply which are unaccounted.
+TargetVelocity: 2.5

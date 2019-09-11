@@ -1,0 +1,71 @@
+                        
+                                    LICENSE EXPLANATION                    
+         In extension to Mojang's TOS https://account.mojang.com/terms#commercial
+
+NOTICE: This software is NOT maintained by Mojang nor is Mojang responsible for this software.
+
+ AutoEconomy is in compliance with Mojang's commercial licensing, categorized as a "Mod" of
+Mojang's server software. Specifically, "CraftBukkit", which is a reversed engineered copy of
+that server software, and currently exists in conflict with Mojang's commercial terms. Bukkit
+is a wrapper for that reversed engineered server. Consequently, and especially due to Mojang's
+TOS stating that derivative software is only considered a mod if it does not contain a substantial
+amount of their copyright content, that being, in this case, the reverse engineered CraftBukkit...
+One must conclude that Bukkit does not qualify for the exceptions granted to mods, though Mojang
+will have the final say, as specified in their commercial terms.
+
+As quoted by Mojang's current TOS:
+"- all rights (including copyright, trademark rights and related rights) in the Name, Brand, and 
+Assets and any derivatives are and will remain owned by Mojang"
+
+ Consequently, this software's license does not acknowledge the licensing of the the violating
+CraftBukkit/Bukkit software as anything other Mojang's proprietary server software, as is most
+reasonable given the terms that Mojang employs. Thus, this license is instead a compatible direct
+extension of the license granted by Mojang for "Mods" for their server software.
+
+ Usage licenses for this software are granted directly by the current maintainers of this software.
+Usage licenses are non-transferable and can be revoked by the current maintainers of this software.
+Usage licenses are refundable on an individual basis as allowed by the payment accepter.
+Any usage licenses granted through any party other than past maintainers are non-valid.
+
+You may not use this software in any way which would violate Mojang's most current TOS.
+
+In addition, you may not:
+- Remove this license from the packaging of any copies of this software
+- Make this software accessible to anyone who does not also have a usage license for this software
+- Reverse engineer and or decompile this software for any purpose other than as follows:
+ a) Interoperability
+ b) Bug testing
+ c) Analytics
+ d) Viewing resource files ending in the extension .txt, .hmff, .md, .json, or .yml
+ e) As directly permitted by the current maintaining authors of this software
+You may:
+- Create derivative works of this software in compliance with the above terms
+- Modify, redistribute, and resell any generated resource files ending in .txt, .hmff or .json
+- Create multiple copies and run them on multiple servers in compliance with the above terms
+
+ You maintain full responsibility for your copies of this software.
+Downloading this software to a machine or uploading this software to a machine is permitted under
+the condition that only you or licensed users will ever obtain access to those copies.
+
+ In regards to the current maintainers of this software. The longest standing maintainer will
+always have priority over newer maintainers. Only current maintainers have the right to
+appoint new maintainers of this software and newer standing maintainers do not have the right
+to remove longer standing maintainers.
+Once a maintainer has resigned from their position or is removed by a longer standing maintainer
+they cannot become a maintainer unless appointed by a current maintainer of this software, at
+which point their standing will be reset to new.
+
+In the case were all maintainers of this project have resigned, this license will cease to have
+authority after one full year has elapsed. The licensing for this software will therefore be
+reduced only to Mojang's current TOS, and redistribution of this software among other restricted
+actions will be allowed so long as it is not forbidden by Mojang's TOS at the time.
+
+CURRENT AND PAST MAINTAINERS ARE NOT RESPONSIBLE FOR ANY DAMAGES THAT RESULT FROM THE USAGE OF
+THIS OR ANY DERIVATIVE SOFTWARE. THIS SOFTWARE IS PROVIDED AS-IS AND MAKES NO GUARANTEES REGARDING
+ITS RELIABILITY OR FUNCTIONALITY.
+
+Access to a copy of this software is guaranteed for one full year after purchase and within
+a month after being requested, so long as this license has not been violated by the holder.
+
+Original and current maintainer,
+- Justis R

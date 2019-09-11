@@ -1,0 +1,43 @@
+####################
+# - Auto Economy - # Sell Dump
+####################
+# - by Justis
+# This file serves as a configuration specifically to the sell dump GUI that players will see when performing the standard /sell command.
+
+# This GUI configuration offers the {value} placeholder, which will be replaced with the total value of the dumped items.
+
+# The inventory title of the sell GUI.
+InventoryTitle: &9Sell Dump
+
+# This title will be used when {value} is greater than $0.00
+InventoryTitleWithValue: &9Sell Dump &7| &2{value}
+
+# Any slot whose type resolves to AIR will have its settings stripped, and be reserved for player dumped items.
+DefaultSettings: AIR
+  Amount: 1
+  Name:  
+  Lore: 
+  LeftClick: 
+  RightClick: {leftclick}
+  MiddleClick: {leftclick}
+  ShiftLeftClick: {leftclick}
+  ShiftRightClick: {leftclick}
+
+# The sell dump comes built in actions in addition to player/console commands:
+#
+# DUMP_TO_PLAYER - Will only move items from sell GUI to player inventory.
+# DUMP_TO_SELL_GUI - Will only move items from player inventory to sell GUI.
+# DUMP_TO_SELL_GUI_UNLESS_UNAVAILABLE - Will move items to sell GUI if available in player inventory, otherwise does the opposite.
+# DUMP_TO_PLAYER_UNLESS_UNAVAILABLE - Will move items to player inventory if available in sell GUI, otherwise does the opposite.
+#
+# Only one of these actions will be accepted per click, however, they may be used in conjunction with any number of commands, separated by semicolons.
+SlotTypes:
+  BORDER: GRAY_STAINED_GLASS_PANE
+    Name: &0`
+  DUMP: CAULDRON
+    Name: &eDump
+    Lore: &7Left click to dump to sell inventory.\n&7Right click to dump to player inventory.\n&8If there is nothing to dump, items will be returned instead.
+    LeftClick: DUMP_TO_SELL_GUI_UNLESS_UNAVAILABLE
+    RightClick: DUMP_TO_PLAYER_UNLESS_UNAVAILABLE
+
+DUMP: 53

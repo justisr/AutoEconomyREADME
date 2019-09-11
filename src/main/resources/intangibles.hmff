@@ -1,0 +1,31 @@
+####################
+# - Auto Economy - # Intangibles
+####################
+# - by Justis
+
+# Sometimes you want a price to represent a tax, a process fee, action, attribute, or some other intangible object.
+# This file defines these intangibles, allowing you to add them to any or all of your dependent item prices, and keep the value synchronized.
+
+# Create/remove intangibles freely. Just be sure to reference the correct name from the other price files.
+# The ^ symbol is not necesssary. I've simply used it in the names to make intangibles easily identified from within other price files. 
+# These are individual prices, they should include numbers only, not references to other items/groups. Use itemgroups.hmff for refences.
+# Keep in mind, intangibles, by definition, are not actual items. Simply numerical values. You will not be able to buy/sell them in game.
+
+# Do to the paradox of constants within a fluctuating economic system, these prices, naturally, are counted towards the economic total.
+# These prices will change with supply and demand as any item would, and are equally affected by price distribution/change.
+# Unlike prices in prices.hmff, which will only load if they are internally registered with an item, all intangibles will be loaded into the economy. Even if they are never referenced by another item.
+
+^KILL_WITHER: 25
+  BuyRate: 4
+^WATER: 5
+^MILK: 10
+^LAVA: 10
+^WOOL: 2
+^GRASSY: 0.02
+^PODZOLY: 8
+^PATHY: 0.09
+
+# Feel free to use these in your recipes to refer to the service of crafting/smelting if you would prefer. Ater all, it takes time, which has value.
+# The actual ingredient cost of smelting is handled in @smelt
+#^CRAFTING: 0
+#^SMELTING: 0

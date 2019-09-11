@@ -1,0 +1,88 @@
+#################### 
+# - Auto Economy - # Config 
+#################### 
+# - by Justis 
+#
+# An economy is a living entity, it grows and changes with those who influence it.
+# I offer you influence over your economy. However, careless use of power can result only in tragedy.
+# Use yours wisely.
+
+# Enable Transaction Logs - 
+# Setting this to true will enable the logging of all transactions to a human readable text file at /logs/yyyy-MM-dd-HH.txt 
+# yyyy being the year, MM being the month, dd being the day, and HH being the hour on a 24 hour clock. 
+# A new file will be generated every plugin restart/reload where the last generated file was not within the same hour.
+# Enabling logs will also enable the use of the rollback command, which will reverse logged transactions, restoring the economy to an earlier period.
+EnableLogs: true 
+
+# Price Save Interval - 
+# How often, in minutes, should the plugin save item prices to their designated file? 
+# Recommended that this be relatively frequent in case of potential server crashes, so progress in economic fluctuation is never lost.
+# -1 to disable scheduled saving. AutoEconomy will always save prices on shutdown.
+SaveInterval: 30
+
+# Delete Old Userdata - 
+# The userdata file of a player who has not joined in X many DAYS should be deleted when next closed.
+# WARNING: The userdata stores every player's balance as well as their future added preferences. Be mindful when deleting.
+DeleteAfter: 120
+
+# Exclude Stale UserData -
+# The balance of a player should be excluded from the money supply count after X days of not joining.
+# WARNING: If this is set too low, your money supply count will be volatile. Recommended to include for as long as their balance is relevant.
+# If DeleteAfter is less than or equal to this setting, this setting will have no effect. 
+ExcludeAfter: 120
+
+# Decimal Scale- 
+# Sometimes division results in a repeating decimal (1/3 for instance)
+# Here you can determine the decimal place precision of the result. Complete prevention of data loss is not possible, but we can get close enough that it won't ever matter.
+# Keep in mind that an obsessively large scale will require additional load up/transaction time, and there's really no point to it.
+# However, I do not recommend dropping precision below 18 decimal places.
+DecimalScale: 20
+
+# Messages file version -
+# Messages added in a newer file version than specified here will generate within messages.json
+# Once all new values are generated, this file version will update to the latest version.
+# Setting the file version to 0 will generate all missing values and their comments with the latest defaults of each.
+MessagesVersion: 0.0
+
+# Market Groups -
+# AutoEconomy will always have a main market, which players will default to.
+# To remove their permission to access the main market, remove their permission autoecon.market.main
+# To give them permission to have their own private market give them the permission autoecon.market.private
+# To give them permission to access a market group, give them the permission autoecon.market.group.groupname
+# If a player has access to the main market, they will always be accessing the main market.
+# If a player has access to the private market, but not the main market, they will always access their private market.
+# If a player has access to multiple group markets, and not the private or main market, the group market they access will be based on the listed order.
+#
+# Groups are useful for situations where groups of players on a server are unable to interact with each other in an economic sense.
+# Or if you need to separate the main market from the one everyone is using, due to having some people with private markets and wanting them to always start off the same.
+# Private markets are useful for situations where no player's economic related activities influence other members.
+# Private market data is stored in the player's private data file when a player accesses it for the first time, generating its defaults from the current main market.
+# If you have any market groups set, a directory will be generated in "market/" called "group/" and the group will receive a file with its name.
+# The group file will generate its prices/groups/intangibles sections starting at whatever the main market's prices/groups/intangibles files are currently.
+# List groups with spaces. Example:
+# MarketGroups: antartica mars southkorea afterlife paralleluniverse
+MarketGroups:
+
+# Vault Compatible Player Economy Settings - 
+# If Vault is installed as well as another compatible player economy plugin, that player economy plugin will be what AutoEconomy uses, and these settings will be ignored.
+# If no other compatible player economy plugin is installed, but vault is, all plugins using vault will be able to access AutoEconomy's player economy and settings.
+# If vault is not installed, AutoEconomy will use its own player economy and settings for monetary transactions involving players.
+# AutoEconomy will automatically back up online player balances from the current economy for ease of conversion over to AE later, if you so choose.
+Vault:
+  DefaultBalance: 0
+  DecimalPlaces: 2
+  # By default, currency will be formatted using the symbol instead of the name.
+  # You can change this by setting "CurrencyFormat" to "Name". Example:
+  # CurrencyFormat: Name
+  CurrencyFormat: Symbol
+    Symbol: $
+    NameSingular: dollar
+    NamePlural: dollars
+  # Allow your players to pay players who don't already have a userdata file? Enabling will allow players to generate new user files via the pay command.
+  PayNeverJoined: false
+  # Here you can define the aliases for the vault compatible player economy commands. Separate by spaces.
+  Commands:
+    AutoEconPay: aepay sendmoney pay transfer
+    AutoEconBal: aebal balance bal 
+  # If true, AutoEcon will use its own player economy even if another is installed. Note that this will not make AutoEconomy's player economy available through vault.
+  Independent: false

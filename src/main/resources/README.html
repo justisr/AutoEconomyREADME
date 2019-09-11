@@ -1,0 +1,689 @@
+<!DOCTYPE html><html><head><meta charset="utf-8"><title>README</title><style>code{color:#c7254e;background-color:#f9f2f4;border-radius:4px}code,kbd{padding:2px 4px}pre{display:block;margin:0 0 10px;word-break:break-all;word-wrap:break-word;color:#333;background-color:#f5f5f5;border:1px solid #ccc;border-radius:4px}pre code{padding:0;font-size:inherit;color:inherit;white-space:pre-wrap;background-color:transparent;border-radius:0}table{background-color:transparent}th{text-align:left}.table{width:100%;max-width:100%;margin-bottom:20px}.table>thead>tr>th{padding:8px;line-height:1.4285714;border-top:1px solid #ddd}.table>tbody>tr>td,.table>tbody>tr>th,.table>tfoot>tr>td,.table>tfoot>tr>th,.table>thead>tr>td{padding:8px;line-height:1.4285714;vertical-align:top;border-top:1px solid #ddd}.table>thead>tr>th{vertical-align:bottom;border-bottom:2px solid #ddd}.table>caption+thead>tr:first-child>td,.table>caption+thead>tr:first-child>th,.table>colgroup+thead>tr:first-child>td,.table>colgroup+thead>tr:first-child>th,.table>thead:first-child>tr:first-child>td,.table>thead:first-child>tr:first-child>th{border-top:0}.table-bordered,.table-bordered>tbody>tr>td,.table-bordered>tbody>tr>th,.table-bordered>tfoot>tr>td,.table-bordered>tfoot>tr>th,.table-bordered>thead>tr>td,.table-bordered>thead>tr>th{border:1px solid #ddd}.table-bordered>thead>tr>td,.table-bordered>thead>tr>th{border-bottom-width:2px}.table-striped>tbody>tr:nth-child(odd)>td,.table-striped>tbody>tr:nth-child(odd)>th{background-color:#f9f9f9}*,:after,:before{box-sizing:border-box}html{-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}a{background:0 0}a:active,a:hover{outline:0}b,strong{font-weight:700}h1{margin:.67em 0}pre{overflow:auto}code,kbd{font-size:1em}code,kbd,pre,samp{font-family:monospace,monospace}table{border-collapse:collapse;border-spacing:0}html{font-size:.875em;background:#fff;color:#373d49}body,html{font-family:Georgia,Cambria,serif;height:100%}body{font-size:1rem;font-weight:400;line-height:2rem}ol,ul{margin-bottom:.83999rem;padding-top:.16001rem}li{-webkit-font-feature-settings:'kern' 1,'onum' 1,'liga' 1;font-feature-settings:'kern' 1,'onum' 1,'liga' 1;margin-left:1rem}li>ol,li>ul{margin-bottom:0}p{padding-top:.66001rem;-webkit-font-feature-settings:'kern' 1,'onum' 1,'liga' 1;font-feature-settings:'kern' 1,'onum' 1,'liga' 1;margin-top:0}p,pre{margin-bottom:1.33999rem}pre{font-size:1rem;padding:.66001rem 9.5px 9.5px;line-height:2rem;background:-webkit-linear-gradient(top,#fff 0,#fff .75rem,#f5f7fa .75rem,#f5f7fa 2.75rem,#fff 2.75rem,#fff 4rem);background:linear-gradient(to bottom,#fff 0,#fff .75rem,#f5f7fa .75rem,#f5f7fa 2.75rem,#fff 2.75rem,#fff 4rem);background-size:100% 4rem;border-color:#d3daea}blockquote{margin:0}blockquote p{font-size:1rem;margin-bottom:.33999rem;font-style:italic;padding:.66001rem 1rem 1rem;border-left:3px solid #a0aabf}td,th{padding:12px}h1,h2,h3,h4,h5,h6{font-family:"Source Sans Pro","Helvetica Neue",Helvetica,Arial,sans-serif;-webkit-font-feature-settings:'dlig' 1,'liga' 1,'lnum' 1,'kern' 1;font-feature-settings:'dlig' 1,'liga' 1,'lnum' 1,'kern' 1;font-style:normal;font-weight:600;margin-top:0}h1{line-height:3rem;font-size:2.0571429rem;margin-bottom:.21999rem;padding-top:.78001rem}h2{font-size:1.953125rem;margin-bottom:.1835837rem;padding-top:.8164163rem}h2,h3{line-height:3rem}h3{font-size:1.6457143rem;margin-bottom:.07599rem;padding-top:.92401rem}h4{font-size:1.5625rem;margin-bottom:.546865rem;padding-top:.453135rem}h5{font-size:1.25rem;margin-bottom:-.56251rem;padding-top:.56251rem}h6{font-size:1rem;margin-bottom:-.65001rem;padding-top:.65001rem}a{cursor:pointer;color:#35d7bb;text-decoration:none}a:focus,a:hover{border-bottom-color:#35d7bb;color:#dff9f4}img{height:auto;max-width:100%}#preview .table{width:auto}body{max-width:1024px;margin:0 auto;overflow:auto;padding:2%}</style></head><body id="preview">
+<h1 class="code-line" data-line-start=0 data-line-end=1 ><a id="Auto_Economy__README_0"></a>Auto Economy v${project.version} | README</h1>
+<p class="has-line-data" data-line-start="2" data-line-end="4">AutoEconomy adapts the prices of every possible item to meet the server’s constantly fluctuating supply and demand in real time. Effectively removing item abuse, as well as encouraging the purchase/sale of all available items within the game; and it does all of this through a comprehensive and customizable player experience.<br>
+I’ve put measureless time and meticulous thought into making this the best market economy simulator that it can be, and it means so much to see it appreciated by other interested folk.</p>
+<p class="has-line-data" data-line-start="5" data-line-end="7">This README will hopefully clarify everything you need to know in order to make full use of all that AutoEconomy has to offer.<br>
+Of course, if you need any direct support, always feel free to contact me at any of the following locations:</p>
+<blockquote>
+<p class="has-line-data" data-line-start="7" data-line-end="12">The official support server: <a href="https://discord.gg/TBQ3q3m">https://discord.gg/TBQ3q3m</a> *<br>
+MC-Market: <a href="http://www.mc-market.org/members/194/">http://www.mc-market.org/members/194/</a><br>
+Spigot: <a href="https://www.spigotmc.org/members/justisr.5901/">https://www.spigotmc.org/members/justisr.5901/</a><br>
+Discord: justis#0194<br>
+Email: <a href="mailto:justis.root@gmail.com">justis.root@gmail.com</a></p>
+</blockquote>
+<p class="has-line-data" data-line-start="13" data-line-end="14">I’ll do my best to resolve any questions you might have, thoroughly and promptly.</p>
+<h2 class="code-line" data-line-start=16 data-line-end=17 ><a id="Files_and_Folders_16"></a>Files and Folders</h2>
+<p class="has-line-data" data-line-start="18" data-line-end="21">The file extension .hmff is intentional. Do not change the extensions.<br>
+This is my own file format I’ve developed for heightened flexibility, full comment support, paths with values, no need for string encapsulation, and faster loading/saving times.<br>
+If you use sublime, you may enjoy using a dedicated syntax: <a href="https://gist.github.com/justisr/6be4be9b7cd1bef1547c7ada26cdbc4d">https://gist.github.com/justisr/6be4be9b7cd1bef1547c7ada26cdbc4d</a></p>
+<p class="has-line-data" data-line-start="22" data-line-end="23">From the root AutoEconomy plugin folder you will find the following files and folders:</p>
+<table class="table table-striped table-bordered">
+<thead>
+<tr>
+<th>Location</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>config.hmff</td>
+<td>This file is your main configuration, all of the most important settings are here.</td>
+</tr>
+<tr>
+<td>messages.json</td>
+<td>This file is your messages configuration. It’s in JSON to provide complete support for chat click/hover event customization.</td>
+</tr>
+<tr>
+<td>README.html</td>
+<td>This file, explaining everything you need to know about how to go about setting up and maintaining this plugin.</td>
+</tr>
+<tr>
+<td>logs/…</td>
+<td>This folder contains all of the log files for all of the transactions that occur on your server. These logs are also used for rolling back player balances and market prices should you choose to roll back.</td>
+</tr>
+<tr>
+<td>guis/…</td>
+<td>This folder contains all of the configurations for all of the guis used by AutoEconomy.</td>
+</tr>
+<tr>
+<td>guis/cart.hmff</td>
+<td>This file defines the GUI settings for the cart GUI.</td>
+</tr>
+<tr>
+<td>guis/order.hmff</td>
+<td>This file defines the GUI settings for the order GUI.</td>
+</tr>
+<tr>
+<td>guis/selldump.hmff</td>
+<td>This file defines the GUI settings for the sell GUI.</td>
+</tr>
+<tr>
+<td>guis/shop.hmff</td>
+<td>This file defines the main shop GUI and shop GUI settings for your server.</td>
+</tr>
+<tr>
+<td>guis/shops/…</td>
+<td>This folder contains all of the shops that your main shop will link to, also accessible through /shop shop-name. It will come with generated shop files depending on your server version.</td>
+</tr>
+<tr>
+<td>market/…</td>
+<td>This folder contains everything related to AutoEconomy’s markets and the items and prices contained within.</td>
+</tr>
+<tr>
+<td>market/groups/…</td>
+<td>This folder contains all of the files for each market group you create, each file containing each group’s market data.</td>
+</tr>
+<tr>
+<td>market/item/…</td>
+<td>This folder contains the configuration files for item specific settings on this server’s markets.</td>
+</tr>
+<tr>
+<td>…/item/aliases.hmff</td>
+<td>This file contains aliases for all attainable items on the server. It will also allow you to modify the item’s default display name within GUIS and commands.</td>
+</tr>
+<tr>
+<td>…/item/custom.hmff</td>
+<td>TODO: This file will allow you to add custom items to the server which either overwrite existing items or overwrite them if they contain particular data.</td>
+</tr>
+<tr>
+<td>market/main/…</td>
+<td>This folder contains the main market data, separated into three documented files for clarity.</td>
+</tr>
+<tr>
+<td>…/main/groups.hmff</td>
+<td>This file groups references for the concise determination of prices in prices.hmff</td>
+</tr>
+<tr>
+<td>…/main/intangibles.hmff</td>
+<td>This file contains price references for intangible entities such as “water” without a bucket, and “wool” without a color, etc.*</td>
+</tr>
+<tr>
+<td>…/main/prices.hmff</td>
+<td>This file contains the prices for all items on the server, utilizing references from within itself as well as intangibles.hmff and <em>…/groups.hmff</em></td>
+</tr>
+<tr>
+<td>userdata/…</td>
+<td>This folder contains all the files containing each user’s personal data.</td>
+</tr>
+</tbody>
+</table>
+<h2 class="code-line" data-line-start=48 data-line-end=49 ><a id="Configurations_48"></a>Configurations</h2>
+<p class="has-line-data" data-line-start="50" data-line-end="53">The names for items used in any AutoEconomy configuration file are not the names used in Bukkit’s Material enum.<br>
+This is because not all of their enum names are particularly clear, and the names do not account for items with a shared material type but different byte values.<br>
+Using names independent of Bukkit also ensures that the names will work across all Minecraft/Bukkit versions. A full list of the item names is available in your <em>prices.hmff</em> file, which will generate a listing for all available items.</p>
+<p class="has-line-data" data-line-start="54" data-line-end="55"><strong>GUI Configurations</strong></p>
+<p class="has-line-data" data-line-start="56" data-line-end="57">Even if not present in the file, all GUI inventories start out with the same default values for undefined slots. Any missing values from any of your slot types will use these defaults.</p>
+<pre><code class="has-line-data" data-line-start="59" data-line-end="69">DefaultSettings: AIR
+  Amount: 1
+  Name:  
+  Lore: 
+  LeftClick: 
+  RightClick: {LeftClick}
+  MiddleClick: {LeftClick}
+  ShiftLeftClick: {LeftClick}
+  ShiftRightClick: {LeftClick}
+</code></pre>
+<p class="has-line-data" data-line-start="70" data-line-end="72">These are changeable by including the paths in the file, and specifying a different value. Most GUI configurations will come with these defaults pre-generated for your ease of modification.<br>
+However, different GUI configurations have different behaviors. Ensure you’re reading the documentation provided in each individual file to ensure that you’re receiving the behavior you most desire.</p>
+<p class="has-line-data" data-line-start="73" data-line-end="74">Slot types extend these default values. You can create and use slot types for defining the settings of slots which you will use repeatedly in your configuration(s). Slots can then use the slot type as it is, or modify it further.</p>
+<p class="has-line-data" data-line-start="75" data-line-end="76">Creating a slot type is as simple as adding a name for the slot type, and then specifying the values that should override the default settings mentioned above. Any values not specified will inherit the DefaultSettings value.</p>
+<pre><code class="has-line-data" data-line-start="78" data-line-end="86">SlotTypes:
+  SlotTypeName1: POTATO
+    Amount: 64
+    Name: &amp;7Bunch o' potatoes
+  SlotTypeName2:
+    RightClick: c/say This is a customized slot type.
+  etc...
+</code></pre>
+<p class="has-line-data" data-line-start="87" data-line-end="88">These slot types can then be referenced without indent, for defining which slots use and override that slot type. Slots which use but do not override the slot type, can be written as a value, separated by spaces. Slots which overide the slot type must be indented as the slot type’s child, with the slot number as the key. Any values not specified will inherit the slot type’s values.</p>
+<pre><code class="has-line-data" data-line-start="90" data-line-end="100">SlotTypeName1: 6 12 24 32 42 49 50 51
+  3:
+    Amount: 1
+    Name: &amp;7Singular potato
+SlotTypeName2: 0 1 2 4 7 8 9 11 13 14
+  16: DIRT
+  10: GRASS
+    Name: &amp;7This is custom slot number 10, with grass instead of AIR
+    RightClick: c/say This is a customized slot.
+</code></pre>
+<p class="has-line-data" data-line-start="101" data-line-end="102">The GUI inventory size will adjust to use the most rows needed to fit the largest defined slot. If you would like to make your inventory larger than you have items for, simply define a slot in your desired max row as AIR, and the inventory will accomidate it. Remember to start indexing your slots at 0.</p>
+<p class="has-line-data" data-line-start="103" data-line-end="104">The following placeholders are available for all string value fields in all GUI configurations:</p>
+<table class="table table-striped table-bordered">
+<thead>
+<tr>
+<th>Placeholder</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>{player}</td>
+<td>The player viewing the GUI *</td>
+</tr>
+<tr>
+<td>{item}</td>
+<td>The AE name of the item</td>
+</tr>
+<tr>
+<td>{slot}</td>
+<td>The slot number</td>
+</tr>
+<tr>
+<td>{name}</td>
+<td>The item stack’s display name, color codes omitted</td>
+</tr>
+<tr>
+<td>{size}</td>
+<td>The size of the item stack</td>
+</tr>
+<tr>
+<td>{buyprice}</td>
+<td>The buy price of the item</td>
+</tr>
+<tr>
+<td>{buyprice:stack}</td>
+<td>The buy price of a stack of the item</td>
+</tr>
+<tr>
+<td>{buyprice:#}</td>
+<td>The buy price of a custom amount of the item</td>
+</tr>
+<tr>
+<td>{sellprice}</td>
+<td>The sell price of the item</td>
+</tr>
+<tr>
+<td>{sellprice:stack}</td>
+<td>The sell price of a stack of the item</td>
+</tr>
+<tr>
+<td>{sellprice:#}</td>
+<td>The sell price of a custom amount of the item</td>
+</tr>
+<tr>
+<td>{leftclick}</td>
+<td>The left click action settings</td>
+</tr>
+<tr>
+<td>{rightclick}</td>
+<td>The right click action settings</td>
+</tr>
+<tr>
+<td>{middleclick}</td>
+<td>The middle click action settings</td>
+</tr>
+<tr>
+<td>{shiftrightclick}</td>
+<td>The shift right click action settings</td>
+</tr>
+<tr>
+<td>{shiftleftclick}</td>
+<td>The shift left click action settings</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p class="has-line-data" data-line-start="123" data-line-end="124">* available for use in the inventory title</p>
+</blockquote>
+<p class="has-line-data" data-line-start="125" data-line-end="127">Some GUI configurations may offer additional placeholders, either for the inventory titles, or slots. These will be documented in their respective files.<br>
+If you use a numerical placeholder as the variable of a “custom amount” placeholder, omit the brackets. For example: <code>{buyprice:size}</code></p>
+<p class="has-line-data" data-line-start="128" data-line-end="132">It’s advised that you not directly or indirectly reference a click action within itself, to avoid unexpected duplication.<br>
+To make a click execute a command action with the player as the sender, use <code>p/</code><br>
+To make a click execute a command action with the console as the sender, use <code>c/</code><br>
+Multiple actions can be performed within a single click by separating them with a semicolon. <code>;</code></p>
+<p class="has-line-data" data-line-start="133" data-line-end="135">Player and console command actions are available in all GUI inventory configurations, however, some configurations may offer additional actions. These will be documented in their respective files.<br>
+Any unrecognized actions will be ignored.</p>
+<p class="has-line-data" data-line-start="136" data-line-end="137">To create multiple lore lines, use <code>\n</code> to indicate a new text line.</p>
+<h2 class="code-line" data-line-start=138 data-line-end=139 ><a id="PlaceholderAPI_138"></a>PlaceholderAPI</h2>
+<p class="has-line-data" data-line-start="140" data-line-end="141">AutoEconomy supports PlaceholderAPI, and also offers the following placeholders:</p>
+<table class="table table-striped table-bordered">
+<thead>
+<tr>
+<th>Placeholder</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>%autoecon_balance%</td>
+<td>The player’s monetary balance</td>
+</tr>
+<tr>
+<td>%autoecon_buyprice_{item}%</td>
+<td>The buy price of an item</td>
+</tr>
+<tr>
+<td>%autoecon_buyprice_{item}:stack%</td>
+<td>The buy price of a stack of an item</td>
+</tr>
+<tr>
+<td>%autoecon_buyprice_{item}:{amt}%</td>
+<td>The buy price of a custom amount of an item</td>
+</tr>
+<tr>
+<td>%autoecon_sellprice_{item}%</td>
+<td>The sell price of an item</td>
+</tr>
+<tr>
+<td>%autoecon_sellprice_{item}:stack%</td>
+<td>The sell price of a stack of an item</td>
+</tr>
+<tr>
+<td>%autoecon_sellprice_{item}:{amt}%</td>
+<td>The sell price of a custom amount of an item</td>
+</tr>
+</tbody>
+</table>
+<p class="has-line-data" data-line-start="152" data-line-end="153">When customizing your GUI inventories, always prefer the GUI dedicated placeholders over PlaceholderAPI placeholders. AutoEconomy parses all of its GUI placeholders once, at loadup, and maps them for very fast use and rereuse. PlaceholderAPI placeholders requires parsing every time that they are used, making them much slower, and best suited for chat messages.</p>
+<h2 class="code-line" data-line-start=155 data-line-end=156 ><a id="Permissions_155"></a>Permissions</h2>
+<p class="has-line-data" data-line-start="157" data-line-end="160">Remember that adding/negating a parent permission will add/negate all child permissions except where the child permission has been explicitly negated/added.<br>
+<em>autoecon.admin</em> defaults to OP players.<br>
+<em>autoecon.user</em> defaults to all players.</p>
+<table class="table table-striped table-bordered">
+<thead>
+<tr>
+<th>Node</th>
+<th>Parent</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>autoecon.admin</td>
+<td>*</td>
+<td>Admin permission group</td>
+</tr>
+<tr>
+<td>autoecon.user</td>
+<td>N/A</td>
+<td>Primary user permission group</td>
+</tr>
+<tr>
+<td>autoecon.trade</td>
+<td>autoecon.user</td>
+<td>Allows access to the /trade command</td>
+</tr>
+<tr>
+<td>autoecon.shop</td>
+<td>autoecon.user</td>
+<td>Allows access to the /shop command</td>
+</tr>
+<tr>
+<td>autoecon.sell</td>
+<td>autoecon.user</td>
+<td>Allows access to the /sell command</td>
+</tr>
+<tr>
+<td>autoecon.sell.hand</td>
+<td>autoecon.sell</td>
+<td>Allows access to the /sell hand subcommand</td>
+</tr>
+<tr>
+<td>autoecon.pay</td>
+<td>autoecon.user</td>
+<td>Allows access to the /pay command</td>
+</tr>
+<tr>
+<td>autoecon.bal</td>
+<td>autoecon.user</td>
+<td>Allows access to the /bal command</td>
+</tr>
+<tr>
+<td>autoecon.bal.other</td>
+<td>autoecon.admin</td>
+<td>Allows access to the /bal {user} command</td>
+</tr>
+<tr>
+<td>autoecon.cart</td>
+<td>autoecon.shop</td>
+<td>Allows access to the /cart command</td>
+</tr>
+<tr>
+<td>autoecon.order</td>
+<td>autoecon.shop</td>
+<td>Allows access to the /order command</td>
+</tr>
+<tr>
+<td>autoecon.market.main</td>
+<td>autoecon.user</td>
+<td>Allows access to the main market</td>
+</tr>
+<tr>
+<td>autoecon.market.private</td>
+<td>N/A</td>
+<td>Allows access to a private market</td>
+</tr>
+<tr>
+<td>autoecon.market.group.X</td>
+<td>N/A</td>
+<td>Allows access to the market group X</td>
+</tr>
+</tbody>
+</table>
+<h2 class="code-line" data-line-start=178 data-line-end=179 ><a id="Commands_178"></a>Commands</h2>
+<p class="has-line-data" data-line-start="180" data-line-end="182">The following is a table of all available commands. Sub-commands are also included in this tabel. Sub-commands can only be accessed through the use of their parent command (check usage).<br>
+Usage key: <em>{required}, [optional], -flag, either|or</em></p>
+<table class="table table-striped table-bordered">
+<thead>
+<tr>
+<th>Label</th>
+<th>Aliases</th>
+<th>Description</th>
+<th>Usage</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>autoecon</td>
+<td>ae, autoeconomy, eco, econ, economy, auto, autoe, aecon</td>
+<td>Main command for AutoEconomy</td>
+<td>/autoecon [tab]</td>
+</tr>
+<tr>
+<td>author</td>
+<td>auth, creator, dev, developer</td>
+<td>Information about this plugin’s author</td>
+<td>/autoecon author</td>
+</tr>
+<tr>
+<td>bal</td>
+<td>aebal, balance, bal</td>
+<td>Get your current autoecon balance.</td>
+<td>/bal</td>
+</tr>
+<tr>
+<td>buy</td>
+<td>purchase, get</td>
+<td>Buy from the server market</td>
+<td>/buy {item} [amount] [-stack] [-confirm]</td>
+</tr>
+<tr>
+<td>deposit</td>
+<td>give, ecogive</td>
+<td>Deposit into a player’s balance</td>
+<td>/autoecon deposit {player} {amt}</td>
+</tr>
+<tr>
+<td>dump</td>
+<td></td>
+<td>Dump worth from the market</td>
+<td>/autoecon dump {amt}</td>
+</tr>
+<tr>
+<td>pay</td>
+<td>aepay, sendmoney, pay, transfer</td>
+<td>Transfer a portion of your balance to another user</td>
+<td>/pay {user} {amt}</td>
+</tr>
+<tr>
+<td>pump</td>
+<td></td>
+<td>Pump worth into the market</td>
+<td>/autoecon pump {amt}</td>
+</tr>
+<tr>
+<td>reload</td>
+<td>restart, load, refresh</td>
+<td>Reload the plugin</td>
+<td>/autoecon reload</td>
+</tr>
+<tr>
+<td>save</td>
+<td></td>
+<td>Save the plugin’s files</td>
+<td>/autoecon save</td>
+</tr>
+<tr>
+<td>sell</td>
+<td>dump</td>
+<td>Sell your items</td>
+<td>/sell</td>
+</tr>
+<tr>
+<td>setbalance</td>
+<td>setbal</td>
+<td>Set a player’s balance.</td>
+<td>/autoecon setbalance {player} {amt}</td>
+</tr>
+<tr>
+<td>setexpression</td>
+<td></td>
+<td>Set the expression used for deriving the price of an item/reference</td>
+<td>/autoecon setprice {reference} {price}</td>
+</tr>
+<tr>
+<td>setprice</td>
+<td></td>
+<td>Set the price of an item using worth distribution</td>
+<td>/autoecon setprice {reference} {price}</td>
+</tr>
+<tr>
+<td>shop</td>
+<td>market</td>
+<td>Access the market shop</td>
+<td>/shop [shop] [-preload:#]</td>
+</tr>
+<tr>
+<td>trade</td>
+<td></td>
+<td>Trade with another player</td>
+<td>/trade {player} [player…]</td>
+</tr>
+<tr>
+<td>withdraw</td>
+<td></td>
+<td>Withdraw from a player’s balance</td>
+<td>/autoecon withdraw {player} {amt}</td>
+</tr>
+<tr>
+<td>worth</td>
+<td>price</td>
+<td>Get the worth of an item</td>
+<td>/worth item</td>
+</tr>
+<tr>
+<td>order</td>
+<td>request, placeorder</td>
+<td>Customize an item purchase through a GUI</td>
+<td>/order {item} [amt] [-stack]</td>
+</tr>
+<tr>
+<td>cart</td>
+<td>shoppingcart, scart, shoppingc, basket, checkout</td>
+<td>The command for accessing a player’s cart</td>
+<td>/cart</td>
+</tr>
+<tr>
+<td>checkout</td>
+<td>pay, check</td>
+<td>The command for checkout out all of the items in your cart</td>
+<td>/cart checkout [item</td>
+</tr>
+<tr>
+<td>add</td>
+<td>put, load, include</td>
+<td>The command for checkout out all of the items in your cart</td>
+<td>/cart add {item} [amt]</td>
+</tr>
+<tr>
+<td>remove</td>
+<td>negate, unload, exclude</td>
+<td>The command for checkout out all of the items in your cart</td>
+<td>/cart remove {item|slot} [amt] [-stack]</td>
+</tr>
+<tr>
+<td>clear</td>
+<td>empty, burn, poof, dump</td>
+<td>The command for clearing out one’s shopping cart</td>
+<td>/cart clear</td>
+</tr>
+</tbody>
+</table>
+<p class="has-line-data" data-line-start="211" data-line-end="213">The <em>setprice</em> command does not create/destroy the difference in worth. It will trigger a dispersal of worth within the market to result in the specified item being worth the desired amount, which makes it suitable for changing the price of an item which depends on the price of other items. However, this also means that you cannot set the price of the item to one higher than the rest of the market can provide from its own worth. Consider pumping more worth into the economy first, if making large increases in item price.<br>
+Because the <em>setexpression</em> command modifies the raw expression used for the dermination of an item’s worth, using this command causes a full rebuild of the market each time. Recommended only for quick fixes.</p>
+<h2 class="code-line" data-line-start=215 data-line-end=216 ><a id="Market__Types_215"></a>Market  Types</h2>
+<p class="has-line-data" data-line-start="217" data-line-end="218">By default, all user permissions direct to the main market. Consiquently, only the main market is generated. A new private market will be generated for every user who is explicitly granted permission to use a private market, and a new market group for each group that is defined in the <em>config.hmff</em>.</p>
+<p class="has-line-data" data-line-start="219" data-line-end="221">You might consider having your players use a private market if your server is one where players are disconnected from each other and their activities don’t affect the supply and demand of items for other players.<br>
+Similarly, you might consider using market groups when you have groups of players whose activities affect the market economy of each other, but do not effect the market economy of players in other groups.</p>
+<p class="has-line-data" data-line-start="222" data-line-end="224">If your server calls for it, consider using a plugin like worldgaurd, which allows the server owner to grant and remove permissions to players within defined regions.<br>
+You may have one part of the world use one market group, and another part of the world use another. Players would then be able to walk/teleport/rank-up to an area with a different market from the place they came from.</p>
+<h2 class="code-line" data-line-start=226 data-line-end=227 ><a id="Events_226"></a>Events</h2>
+<p class="has-line-data" data-line-start="228" data-line-end="229">com.gmail.justisroot.autoecon.api.<strong>TransactionPreProcessEvent</strong></p>
+<table class="table table-striped table-bordered">
+<thead>
+<tr>
+<th>Modifier and Type</th>
+<th>Method</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>int</td>
+<td>getAmount()</td>
+<td>Get the amount of the item that is to be transacted</td>
+</tr>
+<tr>
+<td>java.math.BigDecimal</td>
+<td>getChange()</td>
+<td>Get the change in value to the item</td>
+</tr>
+<tr>
+<td>static org.bukkit.event.HandlerList</td>
+<td>getHandlerList()</td>
+<td>Get the HandlerList of this event</td>
+</tr>
+<tr>
+<td>org.bukkit.event.HandlerList</td>
+<td>getHandlers()</td>
+<td>Get the HandlerList of this event</td>
+</tr>
+<tr>
+<td>org.bukkit.inventory.ItemStack</td>
+<td>getItem()</td>
+<td>Get an ItemStack representation of the item to be transacted</td>
+</tr>
+<tr>
+<td>java.lang.String</td>
+<td>getMarketID()</td>
+<td>Get the ID of the market facilitating this transaction&lt;br&gt;Possible return values include “MAIN”, “GROUP {groupname}” or “PRIVATE {player_uuid}”</td>
+</tr>
+<tr>
+<td>java.math.BigDecimal</td>
+<td>getOldWorth()</td>
+<td>Get the previous sell value of the item</td>
+</tr>
+<tr>
+<td>org.bukkit.entity.Player</td>
+<td>getPlayer()</td>
+<td>Get the player making this transaction</td>
+</tr>
+<tr>
+<td>java.math.BigDecimal</td>
+<td>getTotal()</td>
+<td>Get the total value to be transacted</td>
+</tr>
+<tr>
+<td>boolean</td>
+<td>isCancelled()</td>
+<td>Returns true if the transaction has been canceled, false if it has not been canceled</td>
+</tr>
+<tr>
+<td>boolean</td>
+<td>isSale()</td>
+<td>Returns true if the transaction is a sale, false if it was a purchase</td>
+</tr>
+<tr>
+<td>void</td>
+<td>setCancelled(boolean cancel)</td>
+<td>Set whether or not this transaction should be cancelled</td>
+</tr>
+<tr>
+<td>void</td>
+<td>setChange(java.math.BigDecimal newChange)</td>
+<td>Set how much the price of the item will change as a result of this transaction. This will influence how much the price of every other item changes as well</td>
+</tr>
+<tr>
+<td>void</td>
+<td>setSale(boolean sale)</td>
+<td>Set whether or not this was a sale or a purchase</td>
+</tr>
+<tr>
+<td>void</td>
+<td>setTotal(java.math.BigDecimal newTotal)</td>
+<td>Set how much the transaction will have been for. Note that this is after the player’s balance has been checked to ensure capacity. If you change the total of the transaction, ensure the transacting player has the balance necessary</td>
+</tr>
+</tbody>
+</table>
+<p class="has-line-data" data-line-start="249" data-line-end="250">com.gmail.justisroot.autoecon.api.<strong>TransactionCompleteEvent</strong></p>
+<table class="table table-striped table-bordered">
+<thead>
+<tr>
+<th>Modifier and Type</th>
+<th>Method</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>int</td>
+<td>getAmount()</td>
+<td>Get the amount of the item transacted</td>
+</tr>
+<tr>
+<td>java.math.BigDecimal</td>
+<td>getChange()</td>
+<td>Get the chance in value to the item</td>
+</tr>
+<tr>
+<td>static org.bukkit.event.HandlerList</td>
+<td>getHandlerList()</td>
+<td>Get the HandlerList of this event</td>
+</tr>
+<tr>
+<td>org.bukkit.event.HandlerList</td>
+<td>getHandlers()</td>
+<td>Get the HandlerList of this event</td>
+</tr>
+<tr>
+<td>org.bukkit.inventory.ItemStack</td>
+<td>getItem()</td>
+<td>Get an ItemStack representation of the transacted item</td>
+</tr>
+<tr>
+<td>java.lang.String</td>
+<td>getMarketID()</td>
+<td>Get the ID of the market facilitating this transaction. Possible return values include “MAIN”, “GROUP {groupname}” or “PRIVATE {player_uuid}”</td>
+</tr>
+<tr>
+<td>java.math.BigDecimal</td>
+<td>getNewWorth()</td>
+<td>Get the new sell value of the item</td>
+</tr>
+<tr>
+<td>java.math.BigDecimal</td>
+<td>getOldWorth()</td>
+<td>Get the previous sell value of the item</td>
+</tr>
+<tr>
+<td>org.bukkit.entity.Player</td>
+<td>getPlayer()</td>
+<td>Get the player who made this transaction</td>
+</tr>
+<tr>
+<td>java.math.BigDecimal</td>
+<td>getTotal()</td>
+<td>Get the total value transacted</td>
+</tr>
+<tr>
+<td>boolean</td>
+<td>isSale()</td>
+<td>Returns true if the transaction was a sale, false if it was a purchase</td>
+</tr>
+<tr>
+<td>boolean</td>
+<td>isSuccess()</td>
+<td>Returns true of the transaction was successful, false if something prevented the transaction from completing</td>
+</tr>
+</tbody>
+</table>

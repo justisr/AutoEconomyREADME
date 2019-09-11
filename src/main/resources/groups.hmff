@@ -1,0 +1,29 @@
+####################
+# - Auto Economy - # Item Groups
+####################
+# - by Justis
+
+# Some item combonations and averages are repeatedly referenced from within prices.hmff
+# This file functions to define those repeated combos and averages to reduce redundancy within the prices.hmff, and eliminate the need for a lot of additional math.
+
+# Create/remove groups freely. Just be sure to reference the correct name from the prices.hmff
+# The @ symbol is not necesssary. I've simply used it in the names to make groups easily identified from within the prices.hmff 
+# These are simply references, and should contain references only, not real values. Use intangibles.hmff for real values.
+# Keep in mind, groups are not actual items. Simply references. You will not be able to buy/sell them in game.
+
+# Once again, these are merely references. Their calculated prices do not count towards the economic total.
+# Any unused references within this file will be ignored completely.
+
+@ANY_PLANK: [ACACIA_PLANK,BIRCH_PLANK,DARK_OAK_PLANK,JUNGLE_PLANK,OAK_PLANK,SPRUCE_PLANK]:6
+@DANDELION_YELLOW_COMBO: [SUNFLOWER]:2
+@ORANGE_DYE_COMBO: [ROSE_RED,DANDELION_YELLOW]:2
+@PINK_DYE_COMBO: [ROSE_RED,BONE_MEAL]:2
+@CARPET: [^WOOL:2]:3
+@ANY_LOG: [ACACIA_LOG,BIRCH_LOG,DARK_OAK_LOG,JUNGLE_LOG,OAK_LOG,SPRUCE_LOG]:6
+@ANY_MUSHROOM: [RED_MUSHROOM,BROWN_MUSHROOM]:2
+@ANY_SAND: [RED_SAND,SAND]:2
+@MAGENTA_DYE_COMBO: [PURPLE_DYE,PINK_DYE,LILAC,ALLIUM:2]:4
+@ANY_COAL: [COAL,CHARCOAL]:2
+
+# Because it's true that smelting is not free, I've taken the liberty of getting you the average price of smelting a single item with all currently available fuels. Yes, it's long.
+@SMELT: [ACACIA_SAPLING:16200,BIRCH_SAPLING:16200,DARK_OAK_SAPLING:16200,JUNGLE_SAPLING:16200,OAK_SAPLING:16200,SPRUCE_SAPLING:16200,BOWL:16200,STICK:16200,WOOD_BUTTON:16200,^WOOL:16200,@CARPET:16200,ACACIA_SLAB:19800,BIRCH_SLAB:19800,DARK_OAK_SLAB:19800,JUNGLE_SLAB:19800,OAK_SLAB:19800,SPRUCE_SLAB:19800,SIGN:7425,ACACIA_DOOR:7425,BIRCH_DOOR:7425,DARK_OAK_DOOR:7425,JUNGLE_DOOR:7425,OAK_DOOR:7425,SPRUCE_DOOR:7425,WOOD_SWORD:7425,WOOD_AXE:7425,WOOD_SHOVEL:7425,WOOD_HOE:7425,WOOD_PICKAXE:7425,BLAZE_ROD:7425,ACACIA_BOAT:7425,BIRCH_BOAT:7425,DARK_OAK_BOAT:7425,JUNGLE_BOAT:7425,OAK_BOAT:7425,SPRUCE_BOAT:7425,LADDER:2475,FISHING_ROD:2475,BOW:2475,BANNER:2475,RED_MUSHROOM_BLOCK:2475,BROWN_MUSHROOM_BLOCK:2475,NOTE_BLOCK:2475,JUKEBOX:2475,TRAPPED_CHEST:2475,CHEST:2475,BOOKSHELF:2475,CRAFTING_TABLE:2475,WOOD_TRAPDOOR:2475,WOOD_PLATE:2475,@ANY_PLANK:2475,@ANY_LOG:2475,ACACIA_STAIRS:2475,BIRCH_STAIRS:2475,DARK_OAK_STAIRS:2475,JUNGLE_STAIRS:2475,OAK_STAIRS:2475,SPRUCE_STAIRS:2475,ACACIA_FENCE_GATE:2475,BIRCH_FENCE_GATE:2475,DARK_OAK_FENCE_GATE:2475,JUNGLE_FENCE_GATE:2475,OAK_FENCE_GATE:2475,SPRUCE_FENCE_GATE:2475,ACACIA_FENCE:2475,BIRCH_FENCE:2475,DARK_OAK_FENCE:2475,JUNGLE_FENCE:2475,OAK_FENCE:2475,SPRUCE_FENCE:2475,LAVA_BUCKET:891,@ANY_COAL:11137.5,CHARCOAL:11137.5,COAL_BLOCK:113.75]:801900

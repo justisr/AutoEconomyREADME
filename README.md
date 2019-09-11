@@ -1,4 +1,4 @@
-# Auto Economy v2.0.1 | README # 
+# Auto Economy | README # 
 
 AutoEconomy adapts the prices of every possible item to meet the server's constantly fluctuating supply and demand in real time. Effectively removing item abuse, as well as encouraging the purchase/sale of all available items within the game; and it does all of this through a comprehensive and customizable player experience.
 I've put measureless time and meticulous thought into making this the best market economy simulator that it can be, and it means so much to see it appreciated by other interested folk. 
@@ -29,6 +29,8 @@ From the root AutoEconomy plugin folder you will find the following files and fo
 | README.html | This file, explaining everything you need to know about how to go about setting up and maintaining this plugin. |
 | logs/... | This folder contains all of the log files for all of the transactions that occur on your server. These logs are also used for rolling back player balances and market prices should you choose to roll back. |
 | guis/... | This folder contains all of the configurations for all of the guis used by AutoEconomy. |
+| guis/cart.hmff | This file defines the GUI settings for the cart GUI. |
+| guis/order.hmff | This file defines the GUI settings for the order GUI. |
 | guis/selldump.hmff | This file defines the GUI settings for the sell GUI. |
 | guis/shop.hmff |  This file defines the main shop GUI and shop GUI settings for your server. |
 | guis/shops/... | This folder contains all of the shops that your main shop will link to, also accessible through /shop shop-name. It will come with generated shop files depending on your server version. |
@@ -99,7 +101,7 @@ SlotTypeName2: 0 1 2 4 7 8 9 11 13 14
 
 The GUI inventory size will adjust to use the most rows needed to fit the largest defined slot. If you would like to make your inventory larger than you have items for, simply define a slot in your desired max row as AIR, and the inventory will accomidate it. Remember to start indexing your slots at 0.
 
-The following placeholders are available for all GUI configurations:
+The following placeholders are available for all string value fields in all GUI configurations:
 
 | Placeholder | Description |
 | ----------- | ----------- |
@@ -121,7 +123,8 @@ The following placeholders are available for all GUI configurations:
 | {shiftleftclick} | The shift left click action settings |
 > \* available for use in the inventory title
 
-Some GUI configurations may offer additional placeholders, either for the inventory titles, or slots. These will be documented in their respective files.  
+Some GUI configurations may offer additional placeholders, either for the inventory titles, or slots. These will be documented in their respective files. 
+If you use a numerical placeholder as the variable of a "custom amount" placeholder, omit the brackets. For example: `{buyprice:size}`
 
 It's advised that you not directly or indirectly reference a click action within itself, to avoid unexpected duplication.
 To make a click execute a command action with the player as the sender, use `p/`
@@ -131,7 +134,7 @@ Multiple actions can be performed within a single click by separating them with 
 Player and console command actions are available in all GUI inventory configurations, however, some configurations may offer additional actions. These will be documented in their respective files.
 Any unrecognized actions will be ignored.
 
-To create multiple lore lines, use `\n` to represent a new text line.
+To create multiple lore lines, use `\n` to indicate a new text line.
 
 ## PlaceholderAPI ##
 
@@ -198,11 +201,13 @@ Usage key: *{required}, [optional], -flag, either|or*
 | trade |  | Trade with another player | /trade {player} [player...] |
 | withdraw |  | Withdraw from a player's balance | /autoecon withdraw {player} {amt} |
 | worth | price | Get the worth of an item | /worth item |
+| order | request, placeorder | Customize an item purchase through a GUI | /order {item} [amt] [-stack] |
 | cart | shoppingcart, scart, shoppingc, basket, checkout | The command for accessing a player's cart | /cart |
-| checkout | pay, check | The command for checkout out all of the items in your cart | /cart checkout |
+| checkout | pay, check | The command for checkout out all of the items in your cart | /cart checkout [item|slot] [amt] [-stack] |
 | add | put, load, include | The command for checkout out all of the items in your cart | /cart add {item} [amt] |
 | remove | negate, unload, exclude | The command for checkout out all of the items in your cart | /cart remove {item\|slot} [amt] [-stack] |
 | clear | empty, burn, poof, dump | The command for clearing out one's shopping cart | /cart clear |
+
 
 The *setprice* command does not create/destroy the difference in worth. It will trigger a dispersal of worth within the market to result in the specified item being worth the desired amount, which makes it suitable for changing the price of an item which depends on the price of other items. However, this also means that you cannot set the price of the item to one higher than the rest of the market can provide from its own worth. Consider pumping more worth into the economy first, if making large increases in item price.
 Because the *setexpression* command modifies the raw expression used for the dermination of an item's worth, using this command causes a full rebuild of the market each time. Recommended only for quick fixes.
@@ -258,8 +263,4 @@ com.gmail.justisroot.autoecon.api.**TransactionCompleteEvent**
 | java.math.BigDecimal | getTotal() | Get the total value transacted |
 | boolean | isSale() | Returns true if the transaction was a sale, false if it was a purchase |
 | boolean | isSuccess() | Returns true of the transaction was successful, false if something prevented the transaction from completing |
-
-
-
-
 

@@ -1,0 +1,25 @@
+/* -
+####################
+# - Auto Economy - # Messages
+####################
+# - by Justis
+
+In the spirit of offering you the greatest possible freedom and control, this message config is formatted in JSON.
+This allows you to alter the structure of the chat messages your players receive at the most fundimental level.
+If you need a tutorial on how messages are structured, worry not, there's a complete wiki dedicated to the topic: http://wiki.vg/Chat
+There's even an unofficial tool for automatically generating your JSON messages: https://www.minecraftjson.com/
+
+This file will ignore all javascript comments as well as whitespace.
+Comment out or delete any messages you don't want to send.
+
+Messages that offer placeholder replacements will have comments which specify what placeholders are available for that message.
+
+The message file version is stored in the config.hmff file.
+Messages added in a newer file version than the one specified there but missing here will generate their defaults.
+Once the new values are generated, the file version in the config.hmff will update to the latest version.
+
+- */
+
+{  
+	
+} /*  Keep all custom comments and json objects within the above json object for reliable auto-updating. */

@@ -1,0 +1,12 @@
+####################
+# - Auto Economy - # plugin.yml
+####################
+name: AutoEconomy
+author: Justis R
+prefix: AutoEcon
+description: The first market economy simulator
+main: com.gmail.justisroot.autoecon.AutoEcon
+version: ${project.version}
+website: https://mc-market.org/members/194
+softdepend: [Vault, PlaceholderAPI]
+load: POSTWORLD

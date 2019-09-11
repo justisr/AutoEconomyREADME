@@ -1,0 +1,54 @@
+####################
+# - Auto Economy - # Shopping Cart
+####################
+# - by Justis
+# This file serves as a configuration specifically to the cart GUI that players will see when performing the standard /cart command.
+
+# This GUI configuration offers the {value} placeholder, which will be replaced with the total value of the dumped items.
+
+# The inventory title of the cart GUI.
+InventoryTitle: &9Shopping Cart
+
+# This title will be used when {value} is greater than $0.00
+InventoryTitleWithValue: &9Shopping Cart &7| &2{value}
+
+# Any slots whose type resolves to AIR will keep their settings, but will be marked usable for filling the inventory with the player's cart items.
+DefaultSettings: GRAY_STAINED_GLASS_PANE
+  Amount: 1
+  Name:  
+  Lore: 
+  LeftClick: 
+  RightClick: {leftclick}
+  MiddleClick: {leftclick}
+  ShiftLeftClick: {leftclick}
+  ShiftRightClick: {leftclick}
+
+SlotTypes:
+  ITEM: AIR
+    Name: &9{item} &7| &a{buyprice:size}
+    Lore: &aLeft click to purchase one out of the stack\n&aShift left click to purchase just this stack\n&cMiddle Click to order more of this item\n&bRight click to remove one from cart\n&bShift right click to remove stack from cart
+    LeftClick: p/cart checkout {item} 1
+    RightClick: p/cart remove {slot} 1
+    MiddleClick: p/order {item} 
+    ShiftLeftClick: p/cart checkout {item} 1 -stack
+    ShiftRightClick: p/cart remove {slot} 1 -stack
+  BORDER: LIGHT_GRAY_STAINED_GLASS_PANE
+    Name: &0`
+  CHECKOUT: WATER_BUCKET
+    Name: &aCheck out
+    Lore: &7Clicking will purchase all of the above items.
+    LeftClick: p/cart checkout
+  BACK: BARRIER
+    Name: &eBack
+    Lore: &7Return to the shop
+    LeftClick: p/shop -preload:{slot}
+  CLEAR: LAVA_BUCKET
+    Name: &cClear
+    Lore: &7Burn that shopping list!
+    LeftClick: p/cart clear
+
+ITEM: 0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35
+BORDER: 36 38 39 41 42 44
+CHECKOUT: 43
+BACK: 40
+CLEAR: 37
